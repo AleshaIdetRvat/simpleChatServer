@@ -4,8 +4,22 @@ const express = require("express")
 const app = express()
 const http = require("http")
 const server = http.createServer(app)
+
 const { Server } = require("socket.io")
-const io = new Server(server)
+
+const io = new Server(server, {
+    cors: {
+        origin: "https://example.com",
+        methods: ["GET", "POST"],
+    },
+})
+
+// const io = require("socket.io")(httpServer, {
+//     cors: {
+//         origin: "https://example.com",
+//         methods: ["GET", "POST"],
+//     },
+// })
 
 const PORT = process.env.PORT || 80
 
