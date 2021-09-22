@@ -13,4 +13,4 @@ The server will reload if you make edits.
 
 ### `yarn start`
 
-Runs the server in the production mode.
+Runs the server in the production mode!
