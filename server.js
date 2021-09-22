@@ -9,7 +9,7 @@ const { Server } = require("socket.io")
 
 const io = new Server(server, {
     cors: {
-        origin: "https://tranquil-reef-66373.herokuapp.com",
+        origin: "*",
         methods: ["GET", "POST"],
     },
 })
