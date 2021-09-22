@@ -1,4 +1,4 @@
-const config = require("config")
+//const config = require("config")
 
 const express = require("express")
 const app = express()
@@ -7,7 +7,7 @@ const server = http.createServer(app)
 const { Server } = require("socket.io")
 const io = new Server(server)
 
-const PORT = config.get("port")
+const PORT = process.env.PORT || 80
 
 const rooms = new Map()
 
