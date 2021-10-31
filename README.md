@@ -1,6 +1,7 @@
 # Simple Chat Server
 
-This project was written with [express](https://expressjs.com/) and [socket.io](https://socket.io/)
+
+In this project I used [express](https://expressjs.com/) and [socket.io](https://socket.io/)
 
 ## Available Scripts
 
